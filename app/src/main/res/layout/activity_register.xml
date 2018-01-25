@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        android:text="Enter registration details:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/uidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleLabel"
+        android:layout_below="@+id/titleLabel"
+        android:layout_marginTop="30dp"
+        android:text="User Id"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editUid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uidLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/pwdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/uidLabel"
+        android:layout_below="@+id/uidLabel"
+        android:layout_marginTop="26dp"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pwdLabel"
+        android:layout_alignBottom="@+id/pwdLabel"
+        android:layout_alignStart="@+id/editUid"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/rePwdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pwdLabel"
+        android:layout_below="@+id/editPwd"
+        android:layout_marginTop="23dp"
+        android:text="Re-enter\nPassword"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editRePwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editPwd"
+        android:layout_alignTop="@+id/rePwdLabel"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/fnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rePwdLabel"
+        android:layout_below="@+id/editRePwd"
+        android:layout_marginTop="26dp"
+        android:text="First Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fnameLabel"
+        android:layout_alignBottom="@+id/fnameLabel"
+        android:layout_alignStart="@+id/editRePwd"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fnameLabel"
+        android:layout_below="@+id/editFname"
+        android:layout_marginTop="20dp"
+        android:text="Last Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lnameLabel"
+        android:layout_alignBottom="@+id/lnameLabel"
+        android:layout_alignStart="@+id/editFname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lnameLabel"
+        android:layout_below="@+id/editLname"
+        android:layout_marginTop="28dp"
+        android:text="E-mail"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailLabel"
+        android:layout_alignBottom="@+id/emailLabel"
+        android:layout_alignStart="@+id/editLname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="17dp"
+        android:layout_toStartOf="@+id/editEmail"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/submitBtn"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/submitBtn"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textSize="22dp"/>
+</RelativeLayout>
